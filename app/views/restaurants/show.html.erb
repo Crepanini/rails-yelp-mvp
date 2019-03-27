@@ -1,0 +1,7 @@
+<h1><%= @restaurant.name %></h1>
+<h2>(<%= @restaurant.category %>)</p>
+<h5>Address: <%= @restaurant.address %></h5>
+<h5>Tel: <%= @restaurant.phone_number %></h5>
+<%= link_to new_restaurant_review_path(@restaurant) do %>
+  <i class="fas fa-comment"></i>
+<% end %>
